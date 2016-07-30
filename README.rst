@@ -1,5 +1,5 @@
-BBC micro:bit MicroPython Editor for TouchDevelop
-=================================================
+BBC micro:bit MicroPython Editor for pythonineducation.org
+==========================================================
 
 This project is an editor that targets the MicroPython
 (http://micropython.org) version of the Python programming language
@@ -9,95 +9,12 @@ BBC's micro:bit device (https://en.wikipedia.org/wiki/Micro_Bit).
 Developer Setup
 ---------------
 
-This editor is written to be embedded in Microsoft's TouchDevelop
-(https://www.touchdevelop.com/) platform. It means this project is served
-within an iFrame in TouchDevelop. For this to work for development purposes,
-you'll need both TouchDevelop and this project serving locally.
+This editor is written to be embedded in the http://pythonineducation.org/
+website. It means this project is served within an iFrame in the hosting
+website. For this to work for development purposes, you'll need both the
+pythonineducation.org site and this project serving locally.
 
-Apologies for the "stand on one leg, stick your finger in your ear then
-whistle 'Yankee Doodle'" nature of these instructions, but they must be
-completed in order and to the very end before you'll have a working local
-development environment.
-
-Honest, it's worth it! TouchDevelop is cool. ;-)
-
-Install TouchDevelop
-++++++++++++++++++++
-
-In order to set up a working local development environment you will need to
-download and install the (open source) TouchDevelop platform. It's a node.js
-application that's hosted on GitHub (https://github.com/Microsoft/TouchDevelop)
-and the setup instructions can be found in the README. For this to work you
-will need GIT and node.js installed.
-
-They essentially boil down to the following steps:
-
-* clone a copy of the repo::
-
-    git clone https://github.com/Microsoft/TouchDevelop.git
-
-* change to the TouchDevelop directory::
-
-    cd TouchDevelop
-
-* install dependencies::
-
-    npm install jake -g
-    npm install tsd@next -g
-    tsd reinstall
-    npm install
-
-To build and run the "vanilla" (i.e. non-microbit branded) version of
-TouchDevelop you'll need to do one of the following:
-
-* To build the site (it's written in Microsoft's TypeScript language [http://www.typescriptlang.org/] that compiles to Javascript)::
-
-    jake
-
-* To build and run locally::
-
-    jake local
-
-* To clean::
-
-    jake clean
-
-
-Configure the Editor
-++++++++++++++++++++
-
-TouchDevelop expects its embedded editors to be served from the domain it
-expects. In the case of the Python editor for local development you simply
-run it on localhost:8000.
-
-If you're using Python 2 this can be achieved by running the following command
-in the root directory of this project::
-
-    $ python -m SimpleHTTPServer
-
-For Python 3 the command is::
-
-    $ python -m http.server
-
-Please make sure you restart your locally running TouchDevelop instance.
-
-Testing Your Setup
-++++++++++++++++++
-
-Almost there!
-
-As mentioned above, you should visit the following URL to see the locally
-running version of TouchDevelop:
-
-http://localhost:4242/editor/local/mbit.html?lite=stage.microbit.co.uk
-
-Click on "Create Code".
-
-In the resulting popup choose the Python editor from the selection you're
-presented with.
-
-You should find yourself in the Python editor..! See the "Usage" section
-below for details on what you can do.
+https://github.com/python/pythonineducation.org
 
 Code
 ++++
